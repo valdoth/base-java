@@ -1,10 +1,21 @@
 package elementsConception;
 
+import notionConstructeur.Point;
+
 public class TestPoint {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		Point a = new Point(3, 5);
+		a.affiche();
+		a.deplace(4, 9);
+		a.affiche();
+		
+		Point b = new Point();
+		b.affiche();
+		b.deplace(6, 8);
+		b.affiche();
+		
 	}
 
 }
