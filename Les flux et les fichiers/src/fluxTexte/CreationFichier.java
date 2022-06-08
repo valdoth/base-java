@@ -1,33 +1,33 @@
-package creationSequentielle;
+package fluxTexte;
 
-import java.io.DataOutputStream;
-import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class Crsfic1 {
+public class CreationFichier {
 
 	public static void main(String[] args) throws IOException {
 		
-		String nomFich;
+		String nomfich;
 		int n;
 		System.out.println("Donnez le nom du fichier a creer : ");
 		try (Scanner sc = new Scanner(System.in)) {
-			nomFich = sc.nextLine();
-			DataOutputStream sortie = new DataOutputStream(new FileOutputStream(nomFich));
+			nomfich = sc.nextLine();
+			PrintWriter sortie = new PrintWriter(new FileWriter(nomfich));
 			while(true) {
 				System.out.println("donnez un entier : ");
 				n = sc.nextInt();
-				if (n != 0) {
-					sortie.writeInt(n);
+				if (n!=0) {
+					sortie.println(n + " a pour carre " + n*n);
 				} else {
 					break;
 				}
 			}
 			sortie.close();
+			System.out.println("*** fin creation fichier ***");
 		}
-		System.out.println("*** fin creation fichier ***");
-
+		
 	}
 
 }
