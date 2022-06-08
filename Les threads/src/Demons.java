@@ -1,32 +1,28 @@
 import java.util.Scanner;
 
-public class TestInterupt {
+public class Demons {
 
 	public static void main(String[] args) {
-		Ecrit2 e1 = new Ecrit2("Bonjour ", 5);
-		Ecrit2 e2 = new Ecrit2("Bonsoir ", 10);
-		Ecrit2 e3 = new Ecrit2("\n", 35);
+		Ecrit3 e1 = new Ecrit3("Bonjour ", 5);
+		Ecrit3 e2 = new Ecrit3("Bonsoir ", 10);
+		Ecrit3 e3 = new Ecrit3("\n", 35);
+		e1.setDaemon(true);
 		e1.start();
+		e2.setDaemon(true);
 		e2.start();
+		e3.setDaemon(true);
 		e3.start();
 		
 		try (Scanner sc = new Scanner(System.in)) {
 			sc.nextLine();
-			e1.interrupt();
-			System.out.println("\n*** Arret premier thread ***");
-			sc.nextLine();
-			e2.interrupt();
-			e3.interrupt();
-			System.out.println("\n*** Arret deux dernieres threads ***");
-	
 		}
 	}
 	
 	
 }
 
-class Ecrit2 extends Thread {
-	public Ecrit2(String texte, long attente) {
+class Ecrit3 extends Thread {
+	public Ecrit3(String texte, long attente) {
 		this.texte = texte;
 		this.attente = attente;
 	}
