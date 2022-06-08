@@ -31,7 +31,7 @@ public class Recherche {
 				i = posCar + 1;
 			}
 		}
-		System.out.println("Votre mot comporte " + nbCar + " fois le caractere " + car);
+		System.out.println("Votre mot comporte " + nbCar + " fois le caractere : " + car);
 	}
 
 }

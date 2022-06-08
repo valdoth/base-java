@@ -3,7 +3,7 @@ public class Tableaux {
 
 	public static void main(String[] args) {
 		
-		String [] tab = {"java", "c", "pascal", "c++", "ada", "basic", "fortran"};
+		String [] tab = {"java", "c", "pascal", "c++", "ada", "basic", "fortran", "python"};
 		int nbCh = tab.length;
 		String temp;
 		

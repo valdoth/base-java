@@ -10,7 +10,7 @@ public class StringBufferTest {
 		System.out.println(chBuf);
 		chBuf.setCharAt(1, 'e');
 		System.out.println(chBuf);
-		chBuf.append(" 2");
+		chBuf.append(" actuellement");
 		System.out.println(chBuf);
 		chBuf.insert(3, "langage ");
 		System.out.println(chBuf);

@@ -10,7 +10,7 @@ public class Modification {
 		
 		// extraction de sous-chaine
 		ch = "anticonstitutionnellement";
-		ch1 = ch.substring(5);
+		ch1 = ch.substring(6);
 		System.out.println(ch + " -> " + ch1);
 		ch1 = ch.substring(4, 16);
 		System.out.println(ch + " -> " + ch1);

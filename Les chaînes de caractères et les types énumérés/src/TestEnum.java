@@ -23,7 +23,7 @@ public class TestEnum {
 		if (courant.equals(Jour.samedi)) {
 			System.out.println("debut du week-end");
 		} else {
-			System.out.println("jour ouvrable");
+			System.out.println("jour ouvrable de la semaine");
 		}
 		
 		if (courant.ordinal() < 5) {
