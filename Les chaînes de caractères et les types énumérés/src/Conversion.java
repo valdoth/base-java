@@ -4,7 +4,7 @@ public class Conversion {
 	public static void main(String[] args) {
 		
 		// conversion d'un type primitif en une chaine
-		int n = 3948;
+		int n = 3958;
 		String ch = String.valueOf(n);
 		System.out.println(n + " -> " + ch);
 		double b = -65.780;
